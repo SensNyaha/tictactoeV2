@@ -16,7 +16,12 @@ changePlayerButtons.forEach(item => {
         acceptButton.addEventListener('click', (e) => {
             let h1Name = document.createElement('h1');
             h1Name.classList.add('playerName');
-            h1Name.innerText = `${e.target.parentElement.querySelector('input').value}`;
+            if (e.target.parentElement.querySelector('input').value) {
+                h1Name.innerText = `${e.target.parentElement.querySelector('input').value}`;
+            }
+            else {
+                h1Name.innerText = 'Player'
+            }
             e.target.parentElement.querySelector('input').replaceWith(h1Name);
             imgElement.nextElementSibling.style.display = 'none';
             imgElement.style.display = 'inline';
