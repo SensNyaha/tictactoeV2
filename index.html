@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tic tac toe game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <div class="playerInfo xPlayer">
+                <div class="imgBlock">
+                    <img src="imgs/unknown.jpg" alt="avatar">
+                    <div class="avatarListBlock">
+                        <ul class="avatarList">
+                            <li><img src="imgs/anonymous.jpg" alt="anon">Holy anon</li>
+                            <li><img src="imgs/einstein.jpg" alt="anon">Einstein</li>
+                            <li><img src="imgs/legoboy.jpg" alt="anon">Lego boy</li>
+                            <li><img src="imgs/pharaoh.jpg" alt="anon">Pharaoh HYPE</li>
+                            <li><img src="imgs/squarepants.jpg" alt="anon">Square IVAN</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="nameBlock">
+                    <h1 class="playerName">Player 1</h1>
+                    <button class="changePlayerName changeXPlayer">Change player</button>
+                    <button class="changeXPlayer acceptNewPlayerInfo">OK</button>
+                </div>
+            </div>
+            <div class="scoreTab">
+                <div class="xPlayerScores playerScore">
+                    0
+                </div>
+                <div class="splitter">
+                    :
+                </div>
+                <div class="oPlayerScores playerScore">
+                    0
+                </div>
+            </div>
+            <div class="playerInfo oPlayer">
+                <div class="nameBlock">
+                    <h1 class="playerName">Player 2</h1>
+                    <button class="changePlayerName changeOPlayer">Change player</button>
+                    <button class="changeOPlayer acceptNewPlayerInfo">OK</button>
+                </div>
+                <div class="imgBlock">
+                    <img src="imgs/unknown.jpg" alt="avatar">
+                    <div class="avatarListBlock">
+                        <ul class="avatarList">
+                            <li><img src="imgs/anonymous.jpg" alt="anon">Holy anon</li>
+                            <li><img src="imgs/einstein.jpg" alt="anon">Einstein</li>
+                            <li><img src="imgs/legoboy.jpg" alt="anon">Lego boy</li>
+                            <li><img src="imgs/pharaoh.jpg" alt="anon">Pharaoh HYPE</li>
+                            <li><img src="imgs/squarepants.jpg" alt="anon">Square IVAN</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="playZone">
+            <div class="xPlayerLog gameLog">
+                <div class="container">
+                    
+                </div>
+            </div>
+            <div class="game">
+                <table>
+                    <tr data-position="1">
+                        <td data-position="1"></td>
+                        <td data-position="2"></td>
+                        <td data-position="3"></td>
+                    </tr>
+                    <tr data-position="2">
+                        <td data-position="1"></td>
+                        <td data-position="2"></td>
+                        <td data-position="3"></td>
+                    </tr>
+                    <tr data-position="3">
+                        <td data-position="1"></td>
+                        <td data-position="2"></td>
+                        <td data-position="3"></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="oPlayerLog gameLog">
+                <div class="container">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
