@@ -21,6 +21,12 @@ changePlayerButtons.forEach(item => {
             }
             else {
                 h1Name.innerText = 'Player'
+                if (e.target.classList.contains('changeXPlayer')){
+                    h1Name.innerText+= ' X'
+                }
+                else {
+                    h1Name.innerText+= ' O'
+                }
             }
             e.target.parentElement.querySelector('input').replaceWith(h1Name);
             imgElement.nextElementSibling.style.display = 'none';
